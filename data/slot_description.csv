@@ -1,0 +1,31 @@
+domain-slot,description
+hotel-price range,price range of the hotel
+hotel-type,type of hotel
+hotel-parking,whether have parking in the hotel
+hotel-book stay,number of stay for the hotel booking
+hotel-book day,day for the hotel booking
+hotel-book people,number of people for the hotel booking
+hotel-area,area of the hotel
+hotel-stars,number of stars for the hotel
+hotel-internet,whether have internet in the hotel
+hotel-name,name of the hotel
+train-destination,location of destination of the train
+train-day,day for the train booking
+train-departure,location of departure of the train
+train-arrive by,time of arrive by of the train
+train-book people,number of people for the train booking
+train-leave at,time of leave at of the train
+restaurant-food,food of the restaurant
+restaurant-price range,price range od the restaurant
+restaurant-area,area of the restaurant
+restaurant-name,name of the restaurant
+restaurant-book time,time of the restaurant booking
+restaurant-book day,day of the restaurant booking
+restaurant-book people,number of people for the restaurant booking
+attraction-area,area of the attraction
+attraction-name,name of the attraction
+attraction-type,type of the attraction
+taxi-leave at,time of leave at of the taxi
+taxi-destination,location of the destination of the taxi
+taxi-departure,location of the departure of the taxi
+taxi-arrive by,time of arrive by of the taxi

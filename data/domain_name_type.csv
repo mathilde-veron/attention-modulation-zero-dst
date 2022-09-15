@@ -1,0 +1,31 @@
+domain-slot,domain,name,value_type
+hotel-price range,hotel,price range,price range
+hotel-type,hotel,type,type
+hotel-parking,hotel,parking,boolean
+hotel-book stay,hotel,book stay,number
+hotel-book day,hotel,book day,day
+hotel-book people,hotel,book people,number
+hotel-area,hotel,area,area
+hotel-stars,hotel,stars,number
+hotel-internet,hotel,internet,boolean
+hotel-name,hotel,name,name
+train-destination,train,destination,location
+train-day,train,day,day
+train-departure,train,departure,location
+train-arrive by,train,arrive by,time
+train-book people,train,book people,number
+train-leave at,train,leave at,time
+restaurant-food,restaurant,food,food
+restaurant-price range,restaurant,price range,price range
+restaurant-area,restaurant,area,area
+restaurant-name,restaurant,name,name
+restaurant-book time,restaurant,book time,time
+restaurant-book day,restaurant,book day,day
+restaurant-book people,restaurant,book people,number
+attraction-area,attraction,area,area
+attraction-name,attraction,name,name
+attraction-type,attraction,type,type
+taxi-leave at,taxi,leave at,time
+taxi-destination,taxi,destination,location
+taxi-departure,taxi,departure,location
+taxi-arrive by,taxi,arrive by,time

@@ -1,0 +1,66 @@
+data:
+  # Path of the directory where the data are (ontology, train/dev/test tsv data)
+  dir: 'path/to/data/directory'
+  # Maximum length of the concatenation of the tokenized user's and system's utterances with special tokens
+  max_seq_length: 64
+  # Maximum length of a dialog in terms of turns
+  max_turn_length: 22
+  # Maximum length of the tokenized domain slot types and slot values with special tokens
+  max_label_length: 32
+  # List of domains to remove from the ontology (if not already done)
+  domains_to_rm: ['hospital', 'bus']
+model:
+  name_or_path: 'name or path/to/bert/pretrained'
+train:
+  # Fix seed for reproducibility
+  seed: 1
+  # Name of the data subset to train the model on. known|all.
+  data_subset: 'subset_name'
+  # Name of the ontology subset to train the model on. known|all.
+  ontology_subset: 'subset_name'
+  # Batch size to use during training
+  batch_size: 4
+  # The dropout probability to use on output embeddings before classification. float. Defaults to 0.1.
+  dropout: 0.1
+  # Learning rate to train the model. float. Defaults to 1e-5.
+  learning_rate: 5e-5
+  # The maximum number of epoch to train the model
+  epochs: 300
+  # The number of workers to use for data fetching. Optional, defaults to half the number of processors.
+  num_workers: 4
+  # Whether to freeze the utterance encoder (BERT encoder). Default to False.
+  freeze_utt_encoder: False
+  # The epoch index from which the utterance encoder will be frozen. freeze_utt_encoder has to be set to True.
+  freeze_utt_encoder_from_epoch: 0
+  # Number of attention heads for multi head Attention. Default to 4.
+  attention_heads: 4
+  # Hidden size of the RNN Belief Tracker.
+  hidden_dim: 300
+  # Number of RNN layers. Default to 1.
+  rnn_layers: 1
+  # Distance used to compare the normalized output of the RNN with the embedding vector of the target slot value.
+  distance_metric: 'euclidean'
+  # Whether to use rescaling weights for the cross entropy loss
+  rescale: False
+  # Whether to use the slot description (<type> of <name> of the <domain>) as query for the multi head attention
+  use_slot_desc: False
+  # Whether to use distinctly the domain, name and value type BERT representation as queries for the multi head attn
+  domain_name_type_queries: False
+  # Whether 3 distinct multi head attention layers for the domain, name and value
+  domain_name_type_attn: False
+eval:
+  # Batch size to use during evaluation
+  batch_size: 16
+  # Names of the data and ontology subsets to use to sequentially test the trained model.
+  subsets: ['subset']
+  # Params to modulate scores in the domain multi heads attention layer
+  attention_modulation:
+    # Which model to use for domain prediction
+    # Let unfulfilled to not use attention scores modulation. Else oracle
+    domain_model:
+    # Path to the test file annotated with the domains for the oracle
+    domain_references:
+    # Float between 0 and 1 for attention scores modulation. Defaults to 0 ; 1 means no modulation.
+    beta: 0
+    # Whether to use modulation also for the attention relative to the name and the value type of the slot
+    on_domain_name_type: False

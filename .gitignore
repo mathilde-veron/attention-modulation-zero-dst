@@ -1,0 +1,7 @@
+models*/
+exp*/
+tensorboard*/
+slurm-*.out
+*.pyc
+*.swp
+tmp*.*
