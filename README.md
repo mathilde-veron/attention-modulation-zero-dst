@@ -12,7 +12,21 @@ inference.
 ## Citation
 
 ```bibtex
-Paper accepted at CODI 2022 COLING Workshop. Waiting for publication.
+@inproceedings{veron-etal-2022-attention,
+    title = "Attention Modulation for Zero-Shot Cross-Domain Dialogue State Tracking",
+    author = "Veron, Mathilde  and
+      Galibert, Olivier  and
+      Bernard, Guillaume  and
+      Rosset, Sophie",
+    booktitle = "Proceedings of the 3rd Workshop on Computational Approaches to Discourse",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea and Online",
+    publisher = "International Conference on Computational Linguistics",
+    url = "https://aclanthology.org/2022.codi-1.11",
+    pages = "86--91",
+    abstract = "Dialog state tracking (DST) is a core step for task-oriented dialogue systems aiming to track the user{'}s current goal during a dialogue. Recently a special focus has been put on applying existing DST models to new domains, in other words performing zero-shot cross-domain transfer. While recent state-of-the-art models leverage large pre-trained language models, no work has been made on understanding and improving the results of first developed zero-shot models like SUMBT. In this paper, we thus propose to improve SUMBT zero-shot results on MultiWOZ by using attention modulation during inference. This method improves SUMBT zero-shot results significantly on two domains and does not worsen the initial performance with the great advantage of needing no additional training.",
+}
 ```
 
 ## Installation
