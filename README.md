@@ -1,5 +1,5 @@
 # Attention Modulation for Zero-Shot Cross-Domain Dialogue State Tracking
-Companion repository for the paper "Attention Modulation for Zero-Shot Cross-Domain Dialogue State Tracking".
+Companion repository for the paper [Attention Modulation for Zero-Shot Cross-Domain Dialogue State Tracking](https://aclanthology.org/2022.codi-1.11/).
 
 This project contains all the scripts and information needed to reproduce the experiments presented in the paper.
 
