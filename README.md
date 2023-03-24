@@ -4,9 +4,9 @@ Companion repository for the paper [Attention Modulation for Zero-Shot Cross-Dom
 This project contains all the scripts and information needed to reproduce the experiments presented in the paper.
 
 The code consists in the re-implementation of the SUMBT model ([paper](https://aclanthology.org/P19-1546/) and 
-[repository](https://github.com/SKTBrain/SUMBT)) with Pytorch Lightning, plus the possibility to train two SUMBT 
-variants described in the paper and the possibility to apply attention modulation on a trained model during 
-inference.
+[repository](https://github.com/SKTBrain/SUMBT)) with Pytorch Lightning to enable zero-shot learning, plus the 
+possibility to train two SUMBT variants described in the paper and the possibility to apply attention modulation 
+on a trained model during inference.
 
 
 ## Citation
